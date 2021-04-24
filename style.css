@@ -134,7 +134,7 @@ nav {
   min-height: 90vh;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
-  background-image: url(home.jpg);
+  background-image: url(./photos/home.jpg);
   background-position: 50% 20%;
   background-size: cover;
   color: white;
@@ -191,7 +191,7 @@ nav {
   width: 100%;
   min-height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(/ales.jpg);
+    url(./photos/ales.jpg);
   background-position: 50% 50%;
   background-size: cover;
   color: white;
@@ -217,7 +217,7 @@ figure .image-container {
   border: 1.25vw solid rgb(19 18 15);
   border-radius: 50%;
   /* background-position: 60% 70%; */
-  background-image: url(/myphoto.jpg);
+  background-image: url(./photos/myphoto.jpg);
   background-size: cover;
 }
 .para {
