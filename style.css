@@ -5,6 +5,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   width: 100%;
   height: 100%;
@@ -137,8 +142,13 @@ nav {
 .home h1 {
   font-size: 7vw;
 }
+.home .bold :hover {
+  font-size: 8vw;
+  transition: 0.5s ease-in-out;
+}
 .home .bold {
   color: #ff7f00;
+  transition: 0.5s ease-in-out;
 }
 .home .light {
   font-weight: 300;
@@ -176,10 +186,81 @@ nav {
     opacity: 1;
   }
 }
+
 .about {
   width: 100%;
-  min-height: 90vh;
-  background-image: url(/ales.jpg);
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/ales.jpg);
   background-position: 50% 50%;
   background-size: cover;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Poppins", sans-serif;
+  padding-right: 3%;
+}
+.content {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 3vw;
+}
+.content p {
+  font-size: calc(12px + 1vw);
+}
+figure .image-container {
+  width: 18vw;
+  height: 18vw;
+  max-height: 36vw;
+  border: 1.25vw solid rgb(19 18 15);
+  border-radius: 50%;
+  /* background-position: 60% 70%; */
+  background-image: url(/myphoto.jpg);
+  background-size: cover;
+}
+.para {
+  min-height: 0.5rem;
+}
+figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0.5;
+}
+.content p:nth-child(2) {
+  margin-top: -50%;
+}
+.skills {
+  min-height: 90vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url(https://i1.wp.com/www.estidia.eu/wp-content/uploads/2018/04/Savin-NY-Website-Background-Web.jpg);
+  color: #e97c10;
+  display: flex;
+  font-size: calc(12px + 2vw);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+hr {
+  width: 80%;
+  background-color: darkgray;
+}
+.skills h1 {
+  flex: 0.2;
+}
+.skills ul {
+  flex: 2.7;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-self: center;
+}
+.skills li {
+  display: flex;
+}
+.skills img {
+  height: min(96px, 10vw);
 }
