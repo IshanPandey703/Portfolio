@@ -1,44 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap"
+      rel="stylesheet"
+    />
     <title>Portfolio</title>
-    <link rel="icon" href="/images.ico">
-</head>
-<body>
+    <link rel="icon" href="/images.ico" />
+    <script type="module" src="/app.js"></script>
+  </head>
+  <body>
     <header>
-        <nav>
-            <h2><img src="/logo.png" alt="logo" class="logo"></h2>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Projects</a></li>
-            </ul>
-            <div class="burger">
-                <div class="line-1"></div>
-                <div class="line-2"></div>
-                <div class="line-3"></div>
-            </div>
-        </nav>
-    </header>
-    <script src="/app.js"></script>
+    <!-- Navigation Bar -->
+      <nav>
+        <!-- Logo on screen -->
+        <h2><img src="/logo.png" alt="logo" class="logo" /></h2>
 
-    <div class="home" id="Home">
-        <div id="container">
-            <h1><span class=light>Hi, I'M</span class="bold"><span> <em></em>ISHAN PANDEY<em></em></span></h1>
-            <div class="type"><p>Typewriter</p></div>
+        <!-- Naviagtion Links -->
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">Projects</a></li>
+        </ul>
+        <!-- Nav links end -->
+
+        <!-- Bugrger Class starts -->
+        <div class="burger">
+          <div class="line-1"></div>
+          <div class="line-2"></div>
+          <div class="line-3"></div>
         </div>
-    </div>
-    <div class="about">
-        <h2>ABOUT ME </h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, architecto!</p>
-    </div>
+        <!-- Burger Ends -->
 
-</body>
+      </nav>
+      <!-- Navigation Bar ends -->
+    </header>
+    
+
+    <!-- Home Starts -->
+    <div class="home" id="Home">
+    <!-- Container to give backgoround color over backgorund image -->
+      <div id="container">
+          <div class = "typing">
+              <h1>
+                  <span class="light">Hi, I'M</span>
+                  <span class="bold"> <em>ISHAN PANDEY</em></span>
+              </h1>
+              <div id="typing"></div>
+          </div>
+      </div>
+    </div>
+    <!-- Home ends here -->
+
+    <!-- About ME -->
+    <div class="about" id="About">
+      <h2>ABOUT ME</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
+        architecto!
+      </p>
+    </div>
+    <!-- About ME ends -->
+  </body>
 </html>
