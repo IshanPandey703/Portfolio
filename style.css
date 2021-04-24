@@ -233,7 +233,7 @@ figure {
   margin-top: -50%;
 }
 .skills {
-  min-height: 90vh;
+  min-height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
     url(https://i1.wp.com/www.estidia.eu/wp-content/uploads/2018/04/Savin-NY-Website-Background-Web.jpg);
   color: #e97c10;
@@ -263,4 +263,87 @@ hr {
 }
 .skills img {
   height: min(96px, 10vw);
+}
+
+.projects {
+  height: 100vh;
+  background: url(./photos/proj-back.jpg);
+  color: #e97c10;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 5%;
+  padding-bottom: 3%;
+  font-family: "Poppins", sans-serif;
+  font-size: calc(12px + 2vw);
+}
+
+.projects .cards {
+  display: flex;
+  align-items: center;
+  flex: 5;
+  font-size: calc(12px + 0.5vw);
+  width: 95vw;
+  height: 60vw;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.35);
+  border-radius: 20px;
+}
+.projects h1,
+.projects p {
+  flex: 0.5;
+}
+.projects p {
+  margin-top: 1%;
+  font-size: calc(12px + 0.5vw);
+}
+
+.cards .img-container {
+  margin-left: 2%;
+  display: flex;
+  width: 30vw;
+  /* border: 0.5px solid red; */
+  border-radius: 10px;
+  flex: 1;
+  height: 50vh;
+}
+@media (max-width: 1050px) {
+  .cards .img-container {
+    height: 35vh;
+  }
+  .cards .pro-content {
+    justify-content: center;
+  }
+}
+img {
+  max-width: 100%;
+}
+.cards .pro-content {
+  color: white;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-left: 1%;
+  font-size: calc(12px + 3vw);
+}
+@media (max-width: 728px) {
+  .projects .cards {
+    flex-direction: column;
+  }
+  .cards .pro-content h3,
+  .projects .pro-content h4 {
+    align-self: center;
+  }
+  .cards .img-container {
+    width: 80vw;
+    margin-top: 4%;
+  }
+}
+
+@media (max-width: 520px) {
+  .cards .pro-content {
+    flex: 1.5;
+  }
 }
