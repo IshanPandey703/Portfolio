@@ -266,15 +266,16 @@ hr {
 }
 
 .projects {
-  height: 100vh;
+  height: 125vh;
   background: url(./photos/proj-back.jpg);
+  background-position: right;
   color: #e97c10;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   padding-top: 5%;
-  padding-bottom: 3%;
+  padding-bottom: 8%;
   font-family: "Poppins", sans-serif;
   font-size: calc(12px + 2vw);
 }
@@ -285,7 +286,7 @@ hr {
   flex: 5;
   font-size: calc(12px + 0.5vw);
   width: 95vw;
-  height: 60vw;
+  height: 75vh;
   justify-content: space-around;
   background-color: rgba(0, 0, 0, 0.35);
   border-radius: 20px;
@@ -293,6 +294,15 @@ hr {
 .projects h1,
 .projects p {
   flex: 0.5;
+}
+.projects h1 {
+  font-size: calc(12px + 4vw);
+}
+.pro-content h3 {
+  font-size: calc(18px + 1.5vw);
+}
+.pro-content h6 {
+  font-size: calc(16px + 1vw);
 }
 .projects p {
   margin-top: 1%;
@@ -321,7 +331,7 @@ img {
 }
 .cards .pro-content {
   color: white;
-  height: 50vh;
+  height: 75vh;
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -351,9 +361,9 @@ img {
 .contacts {
   display: flex;
   flex-direction: column;
-  height: 40vh;
+  height: 60vh;
   background-color: #ff7f00;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   font-family: "Poppins", sans-serif;
   font-size: calc(12px + 2vw);
   align-items: center;
@@ -366,6 +376,10 @@ img {
 }
 .contacts h1 {
   align-self: center;
+  font-size: calc(12px + 4vw);
+}
+.contacts p {
+  font-size: calc(8px + 1vw);
 }
 .contacts hr {
   width: 80%;
