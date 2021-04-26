@@ -35,7 +35,6 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  font-size: 2vw;
 }
 .nav-links {
   list-style: none;
@@ -88,7 +87,7 @@ nav {
     background-color: rgba(12, 12, 12, 0.7);
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     width: 50%;
     transform: translateX(100%);
@@ -96,6 +95,7 @@ nav {
   }
   .nav-links li {
     opacity: 0;
+    margin-right: 0.1%;
   }
   .burger {
     display: block;
